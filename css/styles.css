@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f7fa;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    height: 44px;
+}
+
+.nav-bar i {
+    font-size: 1.5rem;
+    color: #dadfe6;
+}
+
+.nav-bar i:nth-child(1) {
+    color: #FD3A73;
+}
+
+.nav-bar:hover {
+    cursor: pointer;
+}
+
+/* ACTION AND PHOTO */
+.action-and-photo {
+    height: calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    width: 98vw;
+    height: 85vh;
+    background: url("../imagens/arturdiego.jpeg") center center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: #eee;
+    box-shadow: 0 4px 10px 0 rgba(136, 136, 136, 0.80);
+}
+
+.text {
+    padding: 20px;
+    background: rgb(161,160,185);
+    background: linear-gradient(360deg, rgba(161,160,185,0.6166841736694677) 0%, rgba(0,0,0,0.039653361344537785) 57%);
+    border-radius: 10px;
+}
+
+.name-photo-age {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}    
+
+.name-photo-age h2:nth-child(2) {
+    margin-left: 15px ;
+    font-weight: 400px;
+}
+
+.bio {
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* ACTIONS */
+.action {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.actions {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 136, 0.15);
+    height: 60px;
+    weight: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 50%;
+    font-size: 3rem;
+    transition: transform 500ms ease;
+}
+
+.actions:hover{
+    cursor: pointer;
+    transform:scale(1.05);
+}
+.action .actions:nth-child(1) {
+    color: #FD3A73;
+    width: 60px;
+}
+
+.action .actions:nth-child(2) {
+    margin: 0 3rem;
+    color: #2db1ff;
+    height: 48px;
+    width: 48px;
+    font-size: 2.5rem;
+}
+
+.action .actions:nth-child(3) {
+    color: #1be4a1;
+    width: 60px;
+}
+
+/* VISÃO DESKTOP */
+
+@media(min-width: 1025px) {
+.photo {
+    width: 500px;
+    height: 900px;
+}
+.nav-bar {
+    width: 400px;
+    margin: auto;
+}
+}
